@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel - Taka Income</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+body{
+  margin:0;
+  background:#f4f6fb;
+  display:flex;
+}
+.sidebar{
+  width:240px;
+  background:#111827;
+  color:#fff;
+  min-height:100vh;
+  padding:20px;
+  position: sticky;
+  top: 0;
+}
+.sidebar h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+.menu a{
+  display:block;
+  padding:12px;
+  margin-bottom:8px;
+  color:#cbd5e1;
+  text-decoration:none;
+  border-radius:6px;
+}
+.menu a:hover,
+.menu a.active{
+  background:#1e40af;
+  color:#fff;
+}
+.main{
+  flex:1;
+  padding:20px;
+}
+.topbar{
+  background:#fff;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.topbar b{
+  font-size:18px;
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <h2>Admin Panel</h2>
+  <div class="menu">
+    <a href="#" class="active">Dashboard</a>
+    <a href="#">Users</a>
+    <a href="#">Ads Settings</a>
+    <a href="#">Referral</a>
+    <a href="#">Withdraw Requests</a>
+  </div>
+</div>
+
+<div class="main">
+  <div class="topbar">
+    <b>Welcome Admin 👑</b>
+    <span>Single Admin Mode</span>
+  </div>
+</div>
+</body>
+</html>
