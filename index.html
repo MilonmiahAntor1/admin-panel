@@ -286,6 +286,27 @@ th{
       </tr>
     </table>
   </div>
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+  
+  const firebaseConfig = {
+  apiKey: "AIzaSyBAbdhAs3vNBokzFmGzPzJ3-KoBAyhJCPY",
+  authDomain: "taka-income-bot-64005.firebaseapp.com",
+  projectId: "taka-income-bot-64005",
+  storageBucket: "taka-income-bot-64005.appspot.com",
+  messagingSenderId: "32062155253",
+  appId: "1:32062155253:web:853e5e62a25a332aff18bc",
+  measurementId: "G-T4CPH2XWF8"
+  };
+  
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+  
+  console.log("🔥 Firebase Connected Successfully");
+  </script>
 
 </div>
 </body>
